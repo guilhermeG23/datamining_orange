@@ -1,0 +1,123 @@
+#Orange 3
+
+Componentes -> Widgtes -> Unidades computacionais do orange 
+-> Todos os componentes tem pelo menos um estado, os estados são de dar ou receber
+
+#Componentes
+file -> Carrega uma arquivo para ser um data shet -> banco cru
+data table -> Demonstra o file como uam tabela de valores
+distributions -> Forma de demonstrar com graficos a quantidade de determinada coluna, qual coluna demonstrar e a forma
+scatter plot -> Grafico de distribuição -> demostra em uma matriz onde cada valor está posicionado, podendo definir o x e y e iniciando uma processo de ordenação pelos valores apresentados, tambem se pode selecionar está ordenação e plotar em um data table ou outros mais componentes
+
+#Fluxo de trabalho é compartilhado no orange, quando se altera um, se altera automaticamente todos os que são dependentes dele
+
+#Formas de adicionar componentes na area de trabalho
+-> Aperte no icone do componentes
+-> Botão direito na area em branco
+-> Continuar o seguimento de um componente
+
+#Diminuir e expandir menu
+Aba de menu -> View -> 	Expande tool dock -> Selecionado ele mostra todas as opções de componentes -> Sem selecionar está opção ele minimiza o menu
+
+#Selecionar visualização
+Ex: Crie um file, conecte ele a um data table, após isso crie um scatter plot com uma conexão data entre o file e o plot, após isso crie uma conexão entre o data table e o plot do tipo de valores selecionados
+-> Conforme você selecionar valores do data table o scatter irá demonstrar os valores selecionados no plot, é uma forma visual de demonstrar a seleção
+
+#Orange pode ler varios tipos de arquivos, como .csv, exceis entre outros mais, como url's de documentos tabelados
+
+#Selecionando colunas
+-> Podemos selecionar colunas ou sua ordem como slect columns
+-> É possivel escolher o que apresentar e sua ordem
+
+#Clustering
+-> Descobrir como dados se dividem em grupos, sub e sub do sub grupos com metodos de clutering hierarquico
+
+#Ex: 
+O csv das iris no caso seria a diferença maxima de um membro de determinado grupo para outro, definindo a diferença entre eles pode saber a diferença máxima e assim dividir automaticamente os grupo
+-> Calculo de distacia eucladiana foi utilizada para fazer o exemplo
+
+#Distances
+Calculo de distancia entre elementos, no caso setado é sobre as linhas
+
+#Clustering hierarchical
+Demostrar a diferença criada entre os elementos em forma de grupos de sub-divisões
+
+#Tree
+-> Avalia de forma a parecer uma arvore binária
+-> Tree viewer é a forma de visualizar está arvore
+
+#Predictions 
+-> Utiliza valores treinados para fornecer previsões
+
+#Logistica regression
+Usando regressão logistica para avaliar os dados a partir de experiencias passadas
+
+#test & Score
+-> Avalia de forma cruzada uma entrada, ele utiliza os valores dos dados de entrada como modelo de aprendizagem até certa quantidade, após isso ele usa os valores restantes para teste de verdade
+
+#Confusion matrix 
+-> Tabela de valores, falso positivo, falso negativo
+
+#Modelo de avaliação simples
+Modelo para evitar sobreajuste(overfitting) com regressão logistica, usando método de treinamento cruzado, isso é, cria um treinamento com uma porcentagem de dados e utiliza o resto para teste do treinamento, isso é chamado de cross validation, ele refaz esse modelo varias vezes para conseguir um modelo de valor médio
+
+#Modelo com valores randomicos
+Este é um método mais complexo, pois gera modelos para o teste, porém se a precisão já for alta, isso pode ser totalmente ignorado a menos que almente drasticamente a taxa de erros
+
+#Orange tem extensões extras
+-> Extensões para entendimento de texto, bioinformatica e mais
+-> A opção fica em option -> Add-ons, selecione as extensões que você quer e instale -> Tem que ter permissão
+
+#MDS
+-> MDS -> É uma demonstração 2D que mostra a junção de valores por caracteristicas iguais ou parecidas
+
+#PCA
+-> Analise e projeção de modelos 2d -> Transforma dados em um novo espaço de atributos não classificado e classificados pelo grau de variancia explicada
+
+#Paint data
+-> Criar modelos parecidos como scatter plot
+
+#Rank
+->Avaliar os componentes mais importantes da tabela, podemos dar mais caracteristicas para avaliação
+
+#Box plot
+-> Demontra uma grafico visual sobre as caracteristicas 
+	-> Linha azul escuro -> Linha da media
+	-> Linha amarela -> Mediana
+	-> Retangulo azul -> Variancia do valor
+
+#Datamining -> Encontrar grupos de insteresses e instacias de dados com importancia
+
+#K-means -> Encontra clusters, depende da forma como selecionamos, podemos dizer a quantidade de clusters que desejamos encontrar e o mesmo calcula
+
+#Problema do k-means -> Falha quando os dados não são compactos e possuem representação mais complexa como desenhos
+
+#Pontuação de um cluster -> Silhouette
+-> demonstra qual é a melhor a partir da pontuação média dos valores dentro de cada cluster
+-> Distancia entre clusters
+-> Utilizado para avaliar inliers e outliers
+
+#Funcionamento do Silhouette
+-> Seleciona um ponto médio do atual cluster e mede a distancia entre seus vizinhos -> Valor chamado de A
+-> O mesmo ponto médio é comparado a distancia entre os valores do cluster mais proximo ao atual -> Valor chamado de B
+-> Para que exista uma boa Silhouette, deve existir uma grande diferença de valor entre eles
+
+-> Equação: B - A / max(A, B) 
+	-> MAX é a distancia máxima do ponto A mais distante do ponto B mais distante
+
+#Silhoette plot
+-> Mostra o quando um valor está distante do centro de um cluster
+
+#Interactive k-means -> Vem do pacote educacional
+-> Forma interativa de visualizar os clusters
+-> Centroids são os quadrados maiores do desenho -> São o centro do cluster
+-> Pode ser usado para manipular os clusters
+
+
+#Baixada a biblioteca de imagem analitc -> Analise de imagem
+
+#Import Images -> Importa uma pasta de imagens
+#Image viewer -> Mostra as imagens importadas
+#Image Embedding -> Realiza o processamento de casamento de imagens e analise aprofundada em um server externo
+
+
